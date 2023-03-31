@@ -93,9 +93,9 @@ builder.Services.AddPnPCoreAuthentication(options =>
     PnPCoreAuthenticationUsernamePasswordOptions Usuario = new PnPCoreAuthenticationUsernamePasswordOptions
     {
 
-        Username = "Lucas_Salazar@DireccionTransito.onmicrosoft.com",
+        Username = "wwewewem",
 
-        Password = "Dragonazul020201@"
+        Password = "wewewewe"
 
     };
 
