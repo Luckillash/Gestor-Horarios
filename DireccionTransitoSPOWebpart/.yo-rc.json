@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.15.2",
+    "libraryName": "trato",
+    "libraryId": "bd3cf10f-68a3-45eb-8253-862931fbb6b8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "trato",
+    "solutionShortDescription": "trato description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,122 @@
+.ContenedorGeneral {
+
+	width: 100%;
+
+	max-width: 800px;
+
+	height: 100%;
+
+	.ContenedorMeses {
+
+		display: flex;
+	
+		align-items: center;
+	
+		height: 10%;
+	
+		.Meses {
+	
+			display: flex;
+			
+			flex-basis: 20px;
+			
+			gap: 20px;
+
+			.ContenedorBurbuja {
+
+				width: 20px;
+				
+				height: 50px;
+
+				display: flex;
+
+				flex-direction: column;
+
+				justify-content: center;
+
+				.Burbuja {
+
+					width: 20px;
+
+					height: 20px;
+
+					border-radius: 100%;
+
+				}
+
+				.TextoBurbuja {
+
+					width: 20px;
+					
+					height: 10px;
+					
+					margin: 0px
+
+				}
+
+			}
+	
+		}
+
+	}
+
+	.ContenedorCalendario {
+
+		height: 90%;
+
+		box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.2);
+
+		border-radius: 4px 4px 4px 4px;
+		
+		
+		.ContenedorDias {
+
+			height: 10%;
+	
+			border-radius: 3px 0px 0px 0px;
+
+			display: grid;
+	
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+		
+			grid-template-rows: 1fr;
+	
+			.Dia {
+
+				display: flex;
+	
+				align-items: center;
+	
+				justify-content: center;
+	
+				background-color: #ff9f4d;
+	
+			}
+	
+		}
+
+		.ContenedorFechas {
+
+			height: 90%;
+	
+			border-radius: 0px 0px 3px 3px;
+	
+			display: grid;
+	
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+		
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+	
+			.Fecha {
+	
+				border: solid 1px rgb(177, 177, 177); 
+	
+				border-top: none;
+	
+			}
+	
+		}
+
+	}
+
+}

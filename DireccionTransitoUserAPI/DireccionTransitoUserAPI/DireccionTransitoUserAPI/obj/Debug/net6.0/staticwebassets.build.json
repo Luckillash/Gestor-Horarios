@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AXK9lFDQDMIDxU0RaRKk8aJ6LW9sj1rYrvjSMCghyLM=",
+  "Source": "DireccionTransitoUserAPI",
+  "BasePath": "_content/DireccionTransitoUserAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

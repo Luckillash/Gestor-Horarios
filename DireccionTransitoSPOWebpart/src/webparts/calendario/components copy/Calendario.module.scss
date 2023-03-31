@@ -1,0 +1,35 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.Mes {
+
+	display: flex;
+
+}
+
+.Calendario {
+
+  	display: grid;
+
+	grid-template-columns: 168.58px 168.58px 168.58px 168.58px 168.58px 168.58px 168.58px  ;
+
+	grid-template-rows: 20px 40px 40px 40px 40px 40px ;
+
+	.Icono {
+
+        font-size: 40px;
+        
+        // margin-top: 10px
+
+    }
+
+	.Dia {
+
+		text-align: center;
+
+		height: 20px;
+
+		background-color: rgb(127, 161, 150);
+
+	}
+
+}

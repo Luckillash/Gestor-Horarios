@@ -1,0 +1,75 @@
+@import "../../index.scss";
+
+.ContenedorGeneral {
+
+    max-width: 1300px;
+
+    width: 100%;
+
+    .Burbuja {
+    
+        width: 80px;
+        
+        height: 80px;
+        
+        color: white;
+
+        font-size: 1.5rem;
+        
+    }
+
+    .Burbuja[aria-selected="true"] {
+
+        background-color: $color-principal-claro;
+
+    }
+
+    .Burbuja:hover[aria-selected="true"] {
+
+        background-color: $color-principal-medio;
+
+    }
+
+    .Burbuja:active[aria-selected="true"] {
+
+        background-color: $color-principal-oscuro;
+
+    }
+
+    .Burbuja[aria-selected="false"] {
+
+        background-color: $color-secundario-claro;
+            
+    }
+
+    .Burbuja:hover[aria-selected="false"] {
+
+        background-color: $color-secundario-medio;
+            
+    }
+
+    .Burbuja:active[aria-selected="false"] {
+
+        background-color: $color-secundario-oscuro
+            
+    }
+        
+    .Linea {
+    
+        width: 50px;
+        
+        height: 6px;
+        
+        background-color: $color-secundario-claro;
+    
+    }
+
+    .ContenedorTexto {
+
+        height: 40px;
+
+    }
+    
+}
+
+

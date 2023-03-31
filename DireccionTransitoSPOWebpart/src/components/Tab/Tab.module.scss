@@ -1,0 +1,45 @@
+
+.Tab {
+
+    transition: background-color 0.3s;
+
+    cursor: pointer;
+
+    display: block;
+
+    margin: 10px 0px;
+
+    padding: 10px;
+
+    .Palanca {
+
+        display: flex;
+
+        align-items: center;
+    
+        font-size: 1.5rem;
+
+        .Texto {
+            
+            font-weight: 400;
+    
+            text-align: center;
+    
+        }
+    
+    }
+
+}
+
+.Tab:hover {
+
+    background-color: #ffc797;
+
+}
+
+
+.Tab[aria-expanded="true"] {
+
+    background-color: #ffc797;
+
+}

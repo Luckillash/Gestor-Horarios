@@ -1,0 +1,144 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+$color-principal-claro: #ff9f4d;
+$color-principal-medio: #fd9235;
+$color-principal-oscuro: #ff8820;
+
+$color-secundario-claro: #ff47a1;
+$color-secundario-medio: #ff228d;
+$color-secundario-oscuro: #ff007b;
+
+$color-fondo:rgba(247, 247, 247, 0.452);
+$color-contenido: white;
+
+$sombra: 2px 2px 15px 5px rgb(97 97 97 / 20%);
+
+.Contenedor {
+
+	display: grid;
+
+    justify-items: center;
+
+    max-width: 1300px;
+
+    margin-bottom: 50px;
+
+    .Burbujas {
+
+        display: flex; 
+
+        justify-content: center;
+
+        align-items: center;
+
+	    gap: 10px;
+
+        .Burbuja {
+
+            border: none;
+
+            box-shadow: 3px 3px 5px 0px rgb(166, 166, 166);
+
+            font-size: 2rem;
+
+            color: white;
+
+            border-radius: 100%; 
+
+            font-style: italic;
+
+            height: 80px; 
+            
+            width: 80px; 
+
+            display: flex;
+
+            justify-content: center;
+        
+            align-items: center;
+
+        }
+
+        .Burbuja[aria-disabled="false"] {
+
+            background-color: #ff47a1;
+
+        }
+
+        .Burbuja:hover[aria-disabled="false"] {
+
+            background-color: #ff228d;
+
+        }
+
+        .Burbuja:active[aria-disabled="false"] {
+
+            background-color: #ff007b;
+
+        }
+
+        .Burbuja[aria-disabled="true"] {
+
+            background-color: #717171;
+
+        }
+
+        .Burbuja:hover[aria-disabled="true"] {
+
+            background-color: #585858;
+
+        }
+
+        .Burbuja:active[aria-disabled="true"] {
+
+            background-color: #424242;
+
+        }
+
+        .Texto {
+
+            position: absolute;
+
+            width: 80px;
+
+            text-decoration: none;
+
+            text-align: center;
+
+            vertical-align: middle;
+
+            font-size: 0.8rem;
+            
+            font-weight: 400;
+
+        }
+
+        .Texto[aria-selected="true"] {
+
+            text-decoration: underline;
+
+        }
+
+        .Linea {
+
+            background-color: #ff47a1;
+
+            border: none;
+
+            box-shadow: 1px 1px 3px 0px rgb(166, 166, 166);
+
+            height: 3px;
+
+            width: 30px;
+
+        }
+
+        .Linea[aria-disabled="true"] {
+
+            background-color: #717171;
+
+        }
+
+    }
+
+}

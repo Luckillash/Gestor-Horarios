@@ -1,0 +1,124 @@
+.DragZone {
+	
+	margin: 10px 0px;
+	
+    height: 16rem;
+    
+	text-align: center;
+    
+	display: flex;
+    
+	align-items: center;
+    
+	justify-content: center;
+
+	border-width: 2px;
+    
+	border-radius: 1rem;
+    
+	border-style: dashed;
+    
+	border-color: #cbd5e1;
+    
+	background-color: #f8fafc;
+
+}
+
+.ContenedorFlex {
+
+	display: flex;
+
+	border-top-right-radius: 0rem;
+
+	border-bottom-right-radius: 0rem;
+
+}
+  
+.Input {
+
+    display: none;
+  
+}
+  
+
+.Texto {
+
+	display: flex;
+
+	flex-direction: column;
+
+}
+
+.TextoFlex {
+
+	width: 50%;
+
+}
+  
+.DragZoneActiva {
+
+    background-color: #ffffff;
+  
+}
+  
+.Boton {
+    
+	cursor: pointer;
+    
+	padding: 0.25rem;
+    
+	font-size: 1rem;
+    
+	border: none;
+    
+	font-family: 'Oswald', sans-serif;
+    
+	background-color: transparent;
+  
+}
+  
+.Boton:hover {
+	
+    text-decoration-line: underline;
+  
+}
+  
+.DragZoneArchivo {
+
+    position: absolute;
+    
+	width: 100%;
+    
+	height: 100%;
+    
+	border-radius: 1rem;
+    
+	top: 0px;
+    
+	right: 0px;
+    
+	bottom: 0px;
+    
+	left: 0px;
+  
+}
+
+// ::-webkit-scrollbar {
+
+// 	width: 0.75rem;
+
+// }
+
+// // ::-webkit-scrollbar-track {
+
+// // 	// background: red;
+	
+// // }
+
+// ::-webkit-scrollbar-thumb {
+
+// 	background: #cbd5e1;
+
+// 	border-radius: 1rem;
+	
+// }

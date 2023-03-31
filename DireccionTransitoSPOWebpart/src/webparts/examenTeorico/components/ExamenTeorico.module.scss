@@ -1,0 +1,69 @@
+.ContenedorBoton {
+		
+	display: flex;
+
+	gap: 10px;
+
+	.BotonPrimario {
+
+		background-color: #ff47a1;
+		
+	}
+		
+	.BotonPrimario:hover {
+		
+		background-color: #ff228d ;
+	}
+		
+	.BotonPrimario:hover:active {
+		
+		background-color: #ff007b;
+
+	}
+
+	.BotonPrimario:active {
+		
+		background-color: #ff007b;
+
+	}
+
+	.BotonSecundario {
+
+		background-color: #ff9f4d;
+		
+	}
+		
+	.BotonSecundario:hover {
+		
+		background-color: #fd9235 ;
+	}
+		
+	.BotonSecundario:hover:active {
+		
+		background-color: #ff8820;
+
+	}
+
+	.BotonSecundario:active {
+		
+		background-color: #ff8820;
+
+	}
+
+}
+
+.Botones {
+
+}
+
+.Grid {
+
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	grid-template-rows: 100px 100px 100px;
+
+	gap: 10px
+
+}

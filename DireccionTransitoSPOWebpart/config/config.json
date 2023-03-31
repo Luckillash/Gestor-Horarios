@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "licencia-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/licencia/LicenciaWebPart.js",
+          "manifest": "./src/webparts/licencia/LicenciaWebPart.manifest.json"
+        }
+      ]
+    },
+    "calendario-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/calendario/CalendarioWebPart.js",
+          "manifest": "./src/webparts/calendario/CalendarioWebPart.manifest.json"
+        }
+      ]
+    },
+    "examen-teorico-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/examenTeorico/ExamenTeoricoWebPart.js",
+          "manifest": "./src/webparts/examenTeorico/ExamenTeoricoWebPart.manifest.json"
+        }
+      ]
+    },
+    "examen-psicotecnico-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/examenPsicotecnico/ExamenPsicotecnicoWebPart.js",
+          "manifest": "./src/webparts/examenPsicotecnico/ExamenPsicotecnicoWebPart.manifest.json"
+        }
+      ]
+    },
+    "examen-practico-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/examenPractico/ExamenPracticoWebPart.js",
+          "manifest": "./src/webparts/examenPractico/ExamenPracticoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LicenciaWebPartStrings": "lib/webparts/licencia/loc/{locale}.js",
+    "CalendarioWebPartStrings": "lib/webparts/calendario/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "ExamenTeoricoWebPartStrings": "lib/webparts/examenTeorico/loc/{locale}.js",
+    "ExamenPsicotecnicoWebPartStrings": "lib/webparts/examenPsicotecnico/loc/{locale}.js",
+    "ExamenPracticoWebPartStrings": "lib/webparts/examenPractico/loc/{locale}.js"
+  }
+}

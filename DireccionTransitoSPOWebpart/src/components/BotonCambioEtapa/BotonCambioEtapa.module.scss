@@ -1,0 +1,28 @@
+.Contenedor {
+
+    .Boton {
+    
+        width: 100%;
+
+        background-color: #ff9f4d;
+        
+    }
+        
+    .Boton:hover {
+        
+        background-color: #fd9235 ;
+    }
+        
+    .Boton:hover:active {
+        
+        background-color: #ff8820;
+    
+    }
+    
+    .Boton:active {
+        
+        background-color: #ff8820;
+    
+    }
+
+}

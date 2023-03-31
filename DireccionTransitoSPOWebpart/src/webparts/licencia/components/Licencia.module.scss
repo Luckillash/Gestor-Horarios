@@ -1,0 +1,334 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+$color-principal-claro: #ff9f4d;
+$color-principal-medio: #fd9235;
+$color-principal-oscuro: #ff8820;
+
+$color-secundario-claro: #ff47a1;
+$color-secundario-medio: #ff228d;
+$color-secundario-oscuro: #ff007b;
+
+$color-fondo:rgba(247, 247, 247, 0.452);
+$color-contenido: white;
+
+$sombra: 2px 2px 15px 5px rgb(97 97 97 / 20%);
+
+* {
+
+	font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+//#region Solicitudes.
+
+.Contenido {
+
+    // height: 500px;
+
+	.Cabecera {
+
+		height: 80px;
+
+		display: flex;
+
+		justify-content: space-between;
+
+		.ContenedorBotones {
+		
+			display: flex;
+
+			gap: 10px;
+
+			.BotonPrimario {
+
+				background-color: #ff47a1;
+				
+			}
+				
+			.BotonPrimario:hover {
+				
+				background-color: #ff228d ;
+			}
+				
+			.BotonPrimario:hover:active {
+				
+				background-color: #ff007b;
+		
+			}
+		
+			.BotonPrimario:active {
+				
+				background-color: #ff007b;
+		
+			}
+
+			.BotonSecundario {
+
+				background-color: #ff9f4d;
+				
+			}
+				
+			.BotonSecundario:hover {
+				
+				background-color: #fd9235 ;
+			}
+				
+			.BotonSecundario:hover:active {
+				
+				background-color: #ff8820;
+		
+			}
+		
+			.BotonSecundario:active {
+				
+				background-color: #ff8820;
+		
+			}
+		
+		}
+
+		.Imagen {
+
+			height: 100%;
+
+		}
+
+	}
+
+	.Filtros {
+
+		display: flex;
+
+		.Boton {
+
+			height: 32px;
+
+			margin-top: 30px;
+
+		}
+
+		.Boton {
+
+			background-color: #ff47a1;
+			
+		}
+			
+		.Boton:hover {
+			
+			background-color: #ff228d ;
+		}
+			
+		.Boton:hover:active {
+			
+			background-color: #ff007b;
+	
+		}
+	
+		.Boton:active {
+			
+			background-color: #ff007b;
+	
+		}
+
+	}
+
+}
+
+.Panel {
+
+	display: flex;
+
+	gap: 20px;
+
+	justify-content: space-between;
+
+	.ContenedorDatos {
+
+		width: 50%
+
+	}
+
+}
+
+
+//#endregion
+
+//#region Solicitud
+
+.ContenedorResumen {
+
+	display: flex;
+
+	justify-content: center;
+
+	margin-bottom: 20px;
+
+	.ContenedorCentradoBordado {
+
+		width: 70%;
+
+		padding: 8px;
+
+		border: solid 1px #ff47a1;
+
+		box-shadow: 3px 3px 5px 0px rgb(166, 166, 166);
+
+		display: flex; 
+
+		justify-content: center;
+
+		align-items: center;
+
+		gap: 8px;
+
+		.ContenedorIzquierdo {
+
+			background-color: #ff47a1;
+
+			width: 100%;
+
+			height: 100%;
+
+			display: grid;
+
+			grid-template-columns: 1fr 1fr;
+			
+			align-items: center;
+
+			box-shadow: 3px 3px 5px 0px rgb(166, 166, 166);
+
+			.Parrafos {
+
+				margin-left: 10px;
+
+				color: white;
+	
+				letter-spacing: 0.5px;
+	
+
+			}
+
+		}
+
+		.ContenedorDerecha {
+
+			width: 180px;
+
+			height: 100%;
+
+			display: flex;
+
+			flex-direction: column;
+
+			justify-content: space-between;
+
+			gap: 8px;
+
+			.Imagen {
+
+				width: 180px;
+
+				height: 180px;
+
+			}
+
+			.Boton {
+
+				background-color: #ff9f4d;
+				
+			}
+				
+			.Boton:hover {
+				
+				background-color: #fd9235 ;
+			}
+				
+			.Boton:hover:active {
+				
+				background-color: #ff8820;
+		
+			}
+		
+			.Boton:active {
+				
+				background-color: #ff8820;
+		
+			}
+
+		}
+
+	}
+
+}
+
+//#endregion
+
+//#region Panel
+
+.HorarioExamenTeoricoDisponible {
+
+	height: 50px;
+
+	display: flex;
+
+	justify-content: space-evenly;
+
+	background-color: rgb(223, 246, 221);
+
+	border-bottom: solid 1px #d6d6d6
+
+}
+
+.HorarioExamenTeoricoDisponible:hover {
+
+	background-color: rgb(187, 239, 182);
+
+}
+
+.HorarioExamenTeoricoDisponible:active {
+
+	background-color: rgb(139, 239, 130);
+
+}
+
+.HorarioExamenTeoricoOcupado {
+
+	height: 50px;
+
+	display: flex;
+
+	justify-content: space-evenly;
+
+	background-color: rgb(253, 231, 233);
+
+	border-bottom: solid 1px #d6d6d6
+
+}
+
+.HorarioExamenTeoricoOcupado:hover {
+
+	background-color: rgb(250, 202, 206);
+
+}
+
+.HorarioExamenTeoricoOcupado:active {
+
+	background-color: rgb(255, 166, 173);
+
+}
+
+//#endregion
+
+.Mi_Webpart {
+
+	width: 100%;
+
+}
+  
+  .container {
+	max-width: none;
+  }

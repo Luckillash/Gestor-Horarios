@@ -1,0 +1,291 @@
+* {
+
+	padding: 0;
+
+	margin: 0;
+
+	box-sizing: border-box;
+
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+$aria-rowindex: 0,7,14,21,28,35;
+
+.Contenido {
+
+    width: 100%;
+
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+	.Calendario {
+
+		// box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.2);
+
+		border-radius: 0px 0px 4px 4px;
+
+		width: 800px;
+
+		height: 430px;
+
+		display: grid;
+
+		grid-template-rows: 10% 10% 80%;
+
+		.Navegacion {
+
+			display: flex;
+
+			gap: 20px;
+
+			.Año {
+
+				height: 43px;
+
+				width: 150px;
+
+				display: flex;
+
+				justify-content: space-between ;
+
+				align-items: center;
+
+			}
+		
+			.Meses {
+		
+				display: flex;
+				
+				flex-basis: 30px;
+				
+				gap: 20px;
+		
+				.ContenedorBurbuja {
+		
+					width: 30px;
+					
+					height: 43px;
+		
+					display: flex;
+		
+					flex-direction: column;
+		
+					justify-content: space-evenly;
+
+					align-items: center;
+		
+					.Burbuja {
+
+						box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+						// box-shadow: 1px 1px 10px 1px rgba(82, 82, 82, 0.342);
+
+						width: 20px;
+		
+						height: 20px;
+		
+						border-radius: 100%;
+
+						background-color: #ff9f4d;
+		
+					}
+
+					.Burbuja[aria-selected="true"] {
+
+						background-color: #ff47a1;
+
+					}
+		
+					.TextoBurbuja {
+		
+						display: flex;
+						
+						align-items: center;
+
+						justify-content: center;
+
+						height: 13px;
+						
+					}
+		
+				}
+		
+			}
+	
+		}
+
+		.Dias {
+
+			display: grid;
+	
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+		
+			grid-template-rows: 1fr;
+	
+			.Dia {
+	
+				display: flex;
+	
+				align-items: center;
+	
+				justify-content: center;
+	
+				background-color: #ff9f4d;
+	
+			}
+
+			.Dia[aria-colindex="0"] {
+
+				border-top-left-radius: 4px;
+
+			}
+
+			.Dia[aria-colindex="6"] {
+
+				border-top-right-radius: 4px;
+				
+			}
+	
+		}
+
+		.ContenedorFechas {
+	
+			border-radius: 0px 0px 3px 3px;
+	
+			display: grid;
+	
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+		
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+	
+			.Fecha {
+
+				background-color: white;
+	
+				border: solid 1px rgb(177, 177, 177); 
+
+				border-left: none;
+	
+				border-top: none;
+
+				display: grid;
+
+				grid-template-rows: 40% 60% ;
+
+				.Examenes {
+
+					display: flex;
+
+					justify-content: space-evenly;
+
+					align-items: center;
+
+				}
+
+				.Examen {
+
+					cursor: pointer;
+
+					width: 15px;
+
+					height: 15px;
+
+					border-radius: 100%;
+
+					display: flex;
+
+					align-items: center;
+
+					justify-content: center;
+
+					border: solid 1px rgb(177, 177, 177); 
+					
+				}
+
+				.Teorico {
+
+					background-color: lightblue;
+
+
+				}
+
+				.Psicotecnico {
+
+					background-color: rgb(255, 255, 148);
+
+				}
+
+				.Practico {
+
+					background-color: lightcoral;
+					
+				}
+	
+			}
+
+			.Fecha[aria-selected="true"] {
+
+				background-color: #ff47a1;
+
+			}
+
+			.Fecha[aria-colindex="35"] {
+
+				border-bottom-left-radius: 4px;
+
+			}
+
+			.Fecha[aria-colindex="41"] {
+
+				border-bottom-right-radius: 4px;
+				
+			}
+
+			@each $label in $aria-rowindex {
+
+				.Fecha[aria-rowindex="#{$label}"] {
+
+					border-left: solid 1px rgb(177, 177, 177)
+
+				}
+
+			}
+
+			.Fecha[aria-disabled="true"] {
+
+				color: #BCBBD9;
+
+			}
+
+			.TextoFecha {
+
+				margin: 4px 0px 0px 10px;
+
+			}
+	
+		}
+
+		.ContenedorFechas[aria-disabled="true"] {
+
+			border: solid 1px rgb(177, 177, 177); 
+
+			border-top: none;
+
+		}
+
+	}
+
+}
+		
+
+
+
+

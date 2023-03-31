@@ -1,0 +1,10 @@
+.GlowingText {
+    margin: 2vh 0;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+.GlowingText:hover {
+    transition: 0.5s all ease;
+    color: #FF9D4F;
+}
